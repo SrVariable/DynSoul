@@ -1,0 +1,29 @@
+---
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta
+			name="description"
+			content="DynSoul, la solución integral para la gestión de almacenes en la era digital. Nuestra empresa se dedica a optimizar y transformar digitalmente la logística y el almacenamiento, ofreciendo soluciones innovadoras y personalizadas para mejorar la eficiencia y productividad de tu negocio. Con DynSoul, lleva tu gestión de almacenes al siguiente nivel."
+		/>
+		<link rel="icon" type="image/svg+xml" href="/dynsoul.svg" />
+		<title>{title}</title>
+	</head>
+	<body class="bg-gradient-to-r from-indigo-500 to-cyan-500 w-full h-full">
+		<Nav />
+		<slot />
+		<Footer />
+	</body>
+</html>
