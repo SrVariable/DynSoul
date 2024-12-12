@@ -1,16 +1,21 @@
 <nav
   class="flex bg-blue-400 justify-between items-center sticky top-0 border-y-2 border-blue-300 text-slate-900 shadow-xl"
 >
-  <div class="flex-none">
+  <div
+    class="flex-none max-sm:py-3 max-sm:flex max-sm:justify-center max-sm:items-center mx-auto"
+  >
     <a href="/"
       ><img
         src="/dynsoul.svg"
+        width="64"
         alt="Logotipo de DynSoul, al hacer click te lleva al Inicio"
         class="px-3"
       /></a
     >
   </div>
-  <div class="flex flex-grow justify-center items-center text-center">
+  <div
+    class="flex flex-grow justify-center items-center text-center max-sm:hidden"
+  >
     <a
       href="/solutions"
       class="px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300"
@@ -26,5 +31,8 @@
       class="px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300"
       >Contacto</a
     >
+  </div>
+  <div class="sm:hidden">
+    <button class="flex justify-center items-center p-3">o</button>
   </div>
 </nav>

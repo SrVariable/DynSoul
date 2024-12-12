@@ -21,7 +21,9 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/dynsoul.svg" />
 		<title>{title}</title>
 	</head>
-	<body class="bg-gradient-to-r from-indigo-500 to-cyan-500 w-full h-full">
+	<body
+		class="bg-gradient-to-r from-indigo-500 to-cyan-500 w-full h-full min-w-min"
+	>
 		<Nav />
 		<slot />
 		<Footer />
