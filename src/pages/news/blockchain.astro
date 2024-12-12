@@ -1,0 +1,58 @@
+---
+import New from "../../components/New.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Implementación de Blockchain";
+---
+
+<Layout title={title}>
+  <New title={title}>
+    <h2 class="text-slate-100 text-2xl">Problema</h2>
+    <p>
+      La gestión de inventario es un proceso que se podría mejorar, ya que lleva
+      asociados problemas, como la falta de trazabilidad que sumado a los
+      errores humanos puede generar conflictos entre el cliente y el proveedor.
+    </p>
+    <h2 class="text-slate-100 text-2xl">Solución</h2>
+    <p>
+      Para mitigar el problema de trazabilidad hemos optado por utilizar la
+      tecnología blockchain, lo que nos ha permitido registrar todas las
+      operaciones de inventario, desde el ingreso al almacén hasta la salida
+      hacia el cliente.
+    </p>
+    <p>
+      Lo hemos integrado en nuestro sistema ERP, a través de una API que permite
+      conectarse a la red blockchain, garantizando que toda la información
+      registrada se refleje automáticamente.
+    </p>
+    <p>Utilizar la blockchain nos ha proporcionado una serie de beneficios</p>
+    <ul>
+      <li>Mayor transparencia y mejor trazabilidad</li>
+      <li>Reducción de costos</li>
+      <li>Optimización de inventarios</li>
+      <li>Seguridad</li>
+    </ul>
+    <h2 class="text-slate-100 text-2xl">Plan de implementación</h2>
+    <h3>Pasos</h3>
+    <ul>
+      <li>Análisis inicial</li>
+      <li>Diseño de la red blockchain</li>
+      <li>Desarrollo de la plataforma</li>
+      <li>Pruebas piloto</li>
+      <li>Despliegue completo</li>
+    </ul>
+    <h3>Recursos</h3>
+    <ul>
+      <li>Recursos tecnológicos</li>
+      <li>Recursos humanos</li>
+      <li>Recursos financieros</li>
+    </ul>
+    <h3>Midiendo el éxito de la implementación</h3>
+    <ul>
+      <li>Reducción de errores en el inventario</li>
+      <li>Disminución de los tiempos de resolución de disputas</li>
+      <li>Incremento en el nivel de satisfacción de clientes y proveedores</li>
+      <li>Reducción de pérdidas en el inventario</li>
+    </ul>
+  </New>
+</Layout>

@@ -1,0 +1,41 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Noticias">
+  <div class="flex flex-col gap-8 justify-center items-center my-6">
+    <Card>
+      <h2 slot="title" class="text-slate-100 text-2xl">
+        Implementación de la blockchain
+      </h2>
+      <p slot="description">
+        La gestión de inventario es un proceso que se podría mejorar, ya que
+        lleva asociados problemas, como la falta de trazabilidad que sumado a
+        los errores humanos puede generar conflictos entre el cliente y el
+        proveedor.
+      </p>
+      <a slot="footer" href="news/blockchain">Seguir leyendo...</a>
+    </Card>
+    <Card>
+      <h2 slot="title" class="text-slate-100 text-2xl">Convergencia IT-OT</h2>
+      <p slot="description">
+        La gestión de inventario es un proceso que se podría mejorar, ya que
+        lleva asociados problemas, como la falta de trazabilidad que sumado a
+        los errores humanos puede generar conflictos entre el cliente y el
+        proveedor.
+      </p>
+      <a slot="footer" href="news/it-ot">Seguir leyendo...</a>
+    </Card>
+    <Card>
+      <h2 slot="title" class="text-slate-100 text-2xl">Impacto de las THD</h2>
+      <p slot="description">
+        La gestión de inventario es un proceso que se podría mejorar, ya que
+        lleva asociados problemas, como la falta de trazabilidad que sumado a
+        los errores humanos puede generar conflictos entre el cliente y el
+        proveedor.
+      </p>
+      <a slot="footer" href="news/thd">Seguir leyendo...</a>
+    </Card>
+  </div>
+</Layout>

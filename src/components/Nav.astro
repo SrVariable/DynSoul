@@ -15,6 +15,11 @@
     class="flex flex-grow justify-center items-center text-center max-sm:hidden"
   >
     <a
+      href="/news"
+      class="px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300"
+      >Noticias</a
+    >
+    <a
       href="/solutions"
       class="px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300"
       >Soluciones</a
@@ -39,6 +44,11 @@
       class="hidden absolute top-14 left-0 w-full bg-blue-400 flex-col"
     >
       <a
+        href="/news"
+        class="block px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300 text-center"
+        >Noticias</a
+      >
+      <a
         href="/solutions"
         class="block px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300 text-center"
         >Soluciones</a
@@ -57,7 +67,7 @@
   </div>
 </nav>
 
-<script lang="ts">
+<script is:inline lang="ts">
   document
     .getElementById("menu-button")
     ?.addEventListener("click", function () {
