@@ -1,9 +1,7 @@
 <nav
   class="flex bg-blue-400 justify-between items-center sticky top-0 border-y-2 border-blue-300 text-slate-900 shadow-xl"
 >
-  <div
-    class="flex-none max-sm:py-3 max-sm:flex max-sm:justify-center max-sm:items-center mx-auto"
-  >
+  <div class="flex-none max-sm:py-3 max-sm:absolute max-sm:left-1/2">
     <a href="/"
       ><img
         src="/dynsoul.svg"
@@ -33,6 +31,45 @@
     >
   </div>
   <div class="sm:hidden">
-    <button class="flex justify-center items-center p-3">o</button>
+    <button class="flex justify-center items-end p-3" id="menu-button"
+      ><img src="menu.svg" alt="" width="32" /></button
+    >
+    <div
+      id="menu"
+      class="hidden absolute top-14 left-0 w-full bg-blue-400 flex-col"
+    >
+      <a
+        href="/solutions"
+        class="block px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300 text-center"
+        >Soluciones</a
+      >
+      <a
+        href="/about"
+        class="block px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300 text-center"
+        >Sobre nosotros</a
+      >
+      <a
+        href="/contact"
+        class="block px-3 py-3 my-1 rounded-md hover:text-blue-500 hover:bg-blue-300 text-center"
+        >Contacto</a
+      >
+    </div>
   </div>
 </nav>
+
+<script lang="ts">
+  document
+    .getElementById("menu-button")
+    ?.addEventListener("click", function () {
+      const menu = document.getElementById("menu");
+      if (menu) {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+          menu.classList.add("block");
+        } else {
+          menu.classList.add("hidden");
+          menu.classList.remove("block");
+        }
+      }
+    });
+</script>
