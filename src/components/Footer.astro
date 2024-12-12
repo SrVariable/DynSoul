@@ -1,3 +1,7 @@
+---
+import Social from "./Social.astro";
+---
+
 <footer
   class="flex flex-col bg-blue-400 text-slate-900 min-h-52 text-center justify-center border-y-2 border-blue-300"
 >
@@ -11,10 +15,54 @@
   </a>
   <p class="ml-2">© 2024 SrVariable</p>
   <div class="items-center justify-center inline-flex gap-3">
-    <a href="#"><img src="linkedin.svg" alt="Logo de LinkedIn" /> </a>
-    <a href="#"><img src="instagram.svg" alt="Logo de Instagram" /></a>
-    <a href="#"><img src="x.svg" alt="Logo de X" /></a>
-    <a href="#"><img src="tiktok.svg" alt="Logo de TikTok" /></a>
+    <Social>
+      <div slot="logo">
+        <a href="#"
+          ><img
+            src="linkedin.svg"
+            width="32"
+            alt="Logo de LinkedIn"
+            class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+          />
+        </a>
+      </div>
+    </Social>
+    <Social>
+      <div slot="logo">
+        <a href="#"
+          ><img
+            src="instagram.svg"
+            width="32"
+            alt="Logo de Instagram"
+            class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+          />
+        </a>
+      </div>
+    </Social>
+    <Social>
+      <div slot="logo">
+        <a href="#"
+          ><img
+            src="x.svg"
+            width="32"
+            alt="Logo de X"
+            class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+          />
+        </a>
+      </div>
+    </Social>
+    <Social>
+      <div slot="logo">
+        <a href="#"
+          ><img
+            src="tiktok.svg"
+            width="32"
+            alt="Logo de TikTok"
+            class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+          />
+        </a>
+      </div>
+    </Social>
   </div>
   <a
     href="https://github.com/ribaban-DAW/DynSoul"

@@ -1,13 +1,74 @@
 ---
+import Social from "../components/Social.astro";
+import Section from "../components/Section.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contacto">
   <main>
-    <section class="flex flex-col text-slate-100 items-center min-h-screen">
-      <h1 class="text-5xl text-center py-5 max-w-lg">Contacto</h1>
-      <p class="max-w-xl max-sm:max-w-80">Email: soporte@dynsoul.com</p>
-      <p class="max-w-xl max-sm:max-w-80">Teléfono: +34 333 666 999</p>
-    </section>
+    <Section title="Contacto">
+      <div slot="content">
+        <p class="text-xl">Email: soporte/dynsoul.com</p>
+        <p class="text-xl">Teléfono: +34 333 666 999</p>
+      </div>
+      <div slot="additional-content" class="mt-20">
+        <Section title="Redes sociales">
+          <div slot="content">
+            <Social>
+              <div slot="logo">
+                <a href="#"
+                  ><img
+                    src="linkedin.svg"
+                    width="48"
+                    alt="Logo de LinkedIn"
+                    class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+                  />
+                </a>
+              </div>
+              <p slot="name" class="text-2xl">/DynSoul</p>
+            </Social>
+            <Social>
+              <div slot="logo">
+                <a href="#"
+                  ><img
+                    src="instagram.svg"
+                    width="48"
+                    alt="Logo de Instagram"
+                    class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+                  />
+                </a>
+              </div>
+              <p slot="name" class="text-2xl">/DynSoul</p>
+            </Social>
+            <Social>
+              <div slot="logo">
+                <a href="#"
+                  ><img
+                    src="x.svg"
+                    width="48"
+                    alt="Logo de X"
+                    class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+                  />
+                </a>
+              </div>
+              <p slot="name" class="text-2xl">/DynSoul</p>
+            </Social>
+            <Social>
+              <div slot="logo">
+                <a href="#"
+                  ><img
+                    src="tiktok.svg"
+                    width="48"
+                    alt="Logo de TikTok"
+                    class="shadow-lg bg-slate-100/60 my-3 rounded-full"
+                  />
+                </a>
+              </div>
+              <p slot="name" class="text-2xl">/DynSoul</p>
+            </Social>
+          </div>
+        </Section>
+      </div>
+    </Section>
   </main>
 </Layout>
