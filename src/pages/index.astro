@@ -8,22 +8,23 @@ import Layout from "../layouts/Layout.astro";
 		<section
 			class="flex flex-col justify-center items-center min-h-screen text-center"
 		>
-			<div class="flex justify-between gap-5 items-center my-5">
+			<div class="flex justify-between gap-5 items-center m-5">
 				<img
 					src="/dynsoul.svg"
 					alt="DynSoul logo"
 					class="w-[64px] h-[64px] max-sm:w-[40px]"
 				/>
-				<h1 class="text-slate-100 text-8xl max-sm:text-6xl">DynSoul</h1>
+				<h1 class="text-slate-100 text-8xl max-sm:text-4xl">DynSoul</h1>
 			</div>
 			<p
-				class="px-5 py-1 shadow-xl italic text-4xl text-slate-100 mt-10 bg-gradient-to-r from-orange-300 to-orange-500 max-sm:text-2xl"
+				class="px-5 py-1 mx-5 shadow-xl italic text-4xl text-slate-100 mt-10 bg-gradient-to-r from-orange-300 to-orange-500 max-sm:text-2xl"
 			>
 				Dinámico como el alma
 			</p>
 		</section>
-		<Section title="Descripción">
-			<div slot="content">
+		<section class="flex flex-col text-slate-100 justify-center items-center">
+			<h2 class="text-3xl text-center mb-5">Descripción</h2>
+			<p class="max-w-xl mx-5 text-center">
 				DynSoul es una empresa de almacenes que combina tecnologías innovadoras
 				para ofrecer una experiencia de servicio de alta calidad. Utilizando
 				herramientas digitales avanzadas, DynSoul optimiza la gestión de
@@ -31,14 +32,12 @@ import Layout from "../layouts/Layout.astro";
 				mayor eficiencia y precisión en sus operaciones. Esto se traduce en una
 				mejor experiencia para los clientes, con entregas más rápidas y
 				precisas, y una mayor satisfacción general.
-			</div>
-
+			</p>
 			<a
-				slot="additional-content"
-				class="text-2xl italic my-5 px-5 bg-orange-300/90 hover:bg-orange-400"
+				class="text-96 italic m-5 mb-20 px-2 py-3 bg-gradient-to-r from-orange-300 to-orange-400 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-600 text-center"
 				href="/plan-transformacion-digital.pdf"
-				target="_blank">Información sobre el Plan de Transformación Digital</a
+				target="_blank">Plan de Transformación Digital</a
 			>
-		</Section>
+		</section>
 	</main>
 </Layout>
