@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404">
+  <main>
+    <section
+      class="flex flex-col items-center min-h-screen text-center text-slate-100"
+    >
+      <h1 class="text-5xl text-center block py-5 max-w-lg">404</h1>
+      <img src="/404.jpg" alt="Chopper mirando a la nada" class="px-2" />
+      <p class="max-w-xl max-sm:max-w-80 my-5">
+        Aquí no hay nada que ver, pero puedes ir a
+      </p>
+      <a
+        href="/"
+        class="px-5 py-3 rounded-xl bg-gradient-to-r from-orange-300 to-orange-400 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-600 text-center"
+        >Inicio
+      </a>
+    </section>
+  </main>
+</Layout>
