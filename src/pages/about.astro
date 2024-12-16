@@ -3,29 +3,31 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Sobre nosotros">
-  <main>
-    <section class="flex flex-col items-center min-h-screen text-center">
-      <h1 class="text-slate-100 text-5xl text-center block py-5 max-w-md">
+  <main class="overflow-auto">
+    <div class="flex place-content-center">
+      <h1 class="text-slate-100 text-5xl mx-5 text-center block py-5 max-w-md">
         Evolución de los almacenes
       </h1>
-      <table class="table-auto text-slate-100 max-w-xl max-sm:max-w-80">
+    </div>
+    <div class="flex overflow-auto justify-center max-sm:justify-start">
+      <table class="table-fixed text-slate-100 m-5 max-w-2xl">
         <thead>
           <tr
             class="border-b border-teal-200 bg-gradient-to-r from-cyan-500 to-blue-800"
           >
-            <th scope="col" class="px-4 py-2 max-sm:px-1">Revolución</th>
-            <th scope="col" class="px-4 py-2 max-sm:px-1">Materias primas</th>
-            <th scope="col" class="px-4 py-2 max-sm:px-1">Descubrimientos</th>
-            <th scope="col" class="px-4 py-2 max-sm:px-1">Aplicaciones</th>
+            <th scope="col" class="">Revolución</th>
+            <th scope="col" class="">Materias primas</th>
+            <th scope="col" class="">Descubrimientos</th>
+            <th scope="col" class="">Aplicaciones</th>
           </tr>
         </thead>
         <tbody>
           <tr
             class="border-b border-teal-200 bg-gradient-to-r from-cyan-500 to-blue-800"
           >
-            <th scope="row" class="px-4 py-2 max-sm:px-1">Primera</th>
-            <td class="px-4 py-2">Hierro, madera, carbón</td>
-            <td class="px-4 py-2">Introducción de la máquina de vapor</td>
+            <th scope="row" class="">Primera</th>
+            <td class="">Hierro, madera, carbón</td>
+            <td class="">Introducción de la máquina de vapor</td>
             <td
               >Uso de grúas y mecanismos básicos para mover cargas en almacenes
               portuarios</td
@@ -34,9 +36,9 @@ import Layout from "../layouts/Layout.astro";
           <tr
             class="border-b border-teal-200 bg-gradient-to-r from-cyan-500 to-blue-800"
           >
-            <th scope="row" class="px-4 py-2 max-sm:px-1">Segunda</th>
-            <td class="px-4 py-2">Acero, electricidad, petróleo</td>
-            <td class="px-4 py-2">Motores eléctricos, producción en masa</td>
+            <th scope="row" class="">Segunda</th>
+            <td class="">Acero, electricidad, petróleo</td>
+            <td class="">Motores eléctricos, producción en masa</td>
             <td
               >Almacenes con sistemas eléctricos para iluminación y primeros
               sistemas de cintas transportadoras</td
@@ -45,9 +47,9 @@ import Layout from "../layouts/Layout.astro";
           <tr
             class="border-b border-teal-200 bg-gradient-to-r from-cyan-500 to-blue-800"
           >
-            <th scope="row" class="px-4 py-2 max-sm:px-1">Tercera</th>
-            <td class="px-4 py-2">Silicio, plásticos, computadoras</td>
-            <td class="px-4 py-2">Computadoras, automatización inicial</td>
+            <th scope="row" class="">Tercera</th>
+            <td class="">Silicio, plásticos, computadoras</td>
+            <td class="">Computadoras, automatización inicial</td>
             <td
               >Introducción de sistemas de gestión de inventarios computarizados
               y robots básicos</td
@@ -56,13 +58,9 @@ import Layout from "../layouts/Layout.astro";
           <tr
             class="border-b border-teal-200 bg-gradient-to-r from-cyan-500 to-blue-800"
           >
-            <th scope="row" class="px-4 py-2 max-sm:px-1">Cuarta</th>
-            <td class="px-4 py-2"
-              >IA, IoT, robótica avanzada, energías sostenibles</td
-            >
-            <td class="px-4 py-2"
-              >Robótica avanzada, Big Data, IA, Machine Learning</td
-            >
+            <th scope="row" class="">Cuarta</th>
+            <td class="">IA, IoT, robótica avanzada, energías sostenibles</td>
+            <td class="">Robótica avanzada, Big Data, IA, Machine Learning</td>
             <td
               >Almacenes inteligentes automatizados con robots, sensores IoT,
               optimización energética</td
@@ -70,12 +68,20 @@ import Layout from "../layouts/Layout.astro";
           </tr>
         </tbody>
       </table>
-    </section>
-    <section class="flex flex-col items-center min-h-screen text-center">
-      <h1 class="text-slate-100 text-5xl text-center block py-5 max-w-md">
-        Organigrama de la empresa
+    </div>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-slate-100 text-5xl mx-5 text-center block py-5 max-w-md">
+        Organización de la empresa
       </h1>
-      <img src="/organigrama.png" alt="Organigrama de la empresa" />
-    </section>
+    </div>
+    <div
+      class="flex overflow-auto justify-center items-center max-sm:justify-start"
+    >
+      <img
+        src="/organigrama.png"
+        alt="Organigrama de la empresa"
+        class="p-5 min-w-[600px]"
+      />
+    </div>
   </main>
 </Layout>
